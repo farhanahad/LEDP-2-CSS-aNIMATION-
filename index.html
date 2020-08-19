@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .stage{
+            height: 200px;
+            background-color:skyblue ;
+            min-width: 800px;
+        }
+        .bowl{
+            height: 100px;
+            width: 100px;
+            background-color: tomato;
+            border-radius: 50%;
+            position: relative;
+        }
+        .stage:hover .bowl{
+            animation: slidein 3s ease-in-out  2s infinite alternate ;
+        }
+        @keyframes slidein{
+            0%{
+                left: 400px;
+                top: 100px;
+                background-color: pink;
+            }
+            50%{
+                left: 0;
+                top: 0;
+                background-color: yellow;
+            }
+
+            100%{
+                left: 800px;
+                top: 0;
+                background-color: tomato;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <div class="bowl"></div>
+    </div>
+</body>
+</html>
